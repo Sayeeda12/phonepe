@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PendencySystemTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PendencySystemTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.phonepe1.service.html">com.example.phonepe1.service</a> &gt; PendencySystemTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.978s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testStartTracking()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStartTrackingWithNewEntity()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStartTrackingWithOneCommonTag()</td>
+<td class="success">0.955s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStartTrackingWithZeroTags()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStopTracking()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStopTrackingWithInvalidId()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStopTrackingWithMultipleTags()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:35:27.055 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.phonepe1.service.PendencySystemTests]: PendencySystemTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:35:27.229 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.phonepe1.Phonepe1Application for test class com.example.phonepe1.service.PendencySystemTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-07-03T13:35:27.840+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : Starting PendencySystemTests using Java 17.0.6 with PID 42554 (started by starannumr in /Users/starannumr/Documents/phonepe1)
+2023-07-03T13:35:27.841+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-07-03T13:35:28.362+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : Started PendencySystemTests in 0.876 seconds (process running for 2.466)
+2023-07-03T13:35:29.332+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : Either the tags are empty or an entity with the same ID 1 or the same pair of tags [XYZ] is already being tracked
+2023-07-03T13:35:29.346+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : No entity with ID 123 is being tracked
+2023-07-03T13:35:29.350+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : No entity with ID 1 is being tracked
+2023-07-03T13:35:29.357+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : Either the tags are empty or an entity with the same ID 4 or the same pair of tags [] is already being tracked
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[2023.07.03 13:35:27] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at 03-Jul-2023, 1:35:29 pm</p>
+</div>
+</div>
+</body>
+</html>

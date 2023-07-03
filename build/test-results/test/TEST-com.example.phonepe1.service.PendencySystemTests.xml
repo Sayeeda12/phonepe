@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.phonepe1.service.PendencySystemTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-07-03T08:05:28" hostname="FWS-CHE-LT-6516" time="0.985">
+  <properties/>
+  <testcase name="testStartTrackingWithOneCommonTag()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.955"/>
+  <testcase name="testStartTracking()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.006"/>
+  <testcase name="testStartTrackingWithNewEntity()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.003"/>
+  <testcase name="testStopTrackingWithMultipleTags()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.002"/>
+  <testcase name="testStopTrackingWithInvalidId()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.003"/>
+  <testcase name="testStopTracking()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.006"/>
+  <testcase name="testStartTrackingWithZeroTags()" classname="com.example.phonepe1.service.PendencySystemTests" time="0.003"/>
+  <system-out><![CDATA[13:35:27.055 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.phonepe1.service.PendencySystemTests]: PendencySystemTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:35:27.229 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.phonepe1.Phonepe1Application for test class com.example.phonepe1.service.PendencySystemTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-07-03T13:35:27.840+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : Starting PendencySystemTests using Java 17.0.6 with PID 42554 (started by starannumr in /Users/starannumr/Documents/phonepe1)
+2023-07-03T13:35:27.841+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : No active profile set, falling back to 1 default profile: "default"
+2023-07-03T13:35:28.362+05:30  INFO 42554 --- [    Test worker] c.e.p.service.PendencySystemTests        : Started PendencySystemTests in 0.876 seconds (process running for 2.466)
+2023-07-03T13:35:29.332+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : Either the tags are empty or an entity with the same ID 1 or the same pair of tags [XYZ] is already being tracked
+2023-07-03T13:35:29.346+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : No entity with ID 123 is being tracked
+2023-07-03T13:35:29.350+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : No entity with ID 1 is being tracked
+2023-07-03T13:35:29.357+05:30 ERROR 42554 --- [    Test worker] c.e.phonepe1.service.PendencySystem      : Either the tags are empty or an entity with the same ID 4 or the same pair of tags [] is already being tracked
+]]></system-out>
+  <system-err><![CDATA[[2023.07.03 13:35:27] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+]]></system-err>
+</testsuite>
